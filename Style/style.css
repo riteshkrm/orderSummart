@@ -1,0 +1,147 @@
+:root {
+    /* Primary Colors */
+    --Pale-blue: #e0e8ff;
+    --Bright-blue: #3829e0;
+
+    /* Neutral Colors */
+    --Desaturated-blue: #7280a7;
+    --Dark-blue: #1f2f56;
+    --Very-pale-blue: #f5f7ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    /* overflow: hidden; */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(../Assests/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.main-container{
+    width: 22rem;
+    height: 31.5rem;
+    background-color: #ffffff;
+    border-radius: 15px;  
+}
+
+.hero-image-first{
+    width: 22rem;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.hero-discription{
+    text-align: center;
+}
+
+h2{
+    margin-top: 1.5rem;
+}
+
+p{
+    width: 80%;
+    margin: 1.2rem auto;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+span{
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+.music-image{
+    scale: 0.90;
+}
+
+.annual-plan{
+    width: 80%;
+    height: 4rem;
+    background-color: var(--Very-pale-blue);
+    margin: 0 auto;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: baseline;
+}
+
+.annual-plan-price{
+    position: relative;
+    left: -1.2rem;
+}
+
+.change a:hover{
+    text-decoration: none;
+    opacity: 0.77;
+}
+
+.button-section{
+    width: 80%;
+    margin: 1rem auto;   
+}
+
+.button-section input{
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    cursor: pointer;
+}
+
+.button-section input:hover{
+    opacity: 0.55;
+}
+
+.cancel-order-button{
+    display: flex;
+    justify-content: center;
+}
+
+.cancel-order-button input{
+    font-size: 1.1rem;
+    font-weight: 800;
+    background: transparent;
+    border: none;
+    color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+.cancel-order-button input:hover{
+    color: var(--Dark-blue);
+}
+
+.attribution {
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    top: 1rem;
+}
+
+.attribution a {
+    color: #3e52a3;
+}
+
+@media screen and (width: 432px){
+    body{
+        width: 100vh;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        place-content: center;
+    }
+}
